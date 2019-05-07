@@ -1,0 +1,731 @@
+@font-face {
+    font-family: Pro-Bold-Italic;
+    src: url(fonts/Pro-Bold-Italic.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Playfair-Display-Bold;
+    src: url(fonts/playfair-display-bold.ttf);
+}
+
+@font-face {
+    font-family: Playfair-Display-Bold-Italic;
+    src: url(fonts/playfair-display-bold-italic.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Black;
+    src: url(fonts/Raleway-Black.ttf);
+}
+
+@font-face {
+    font-family: Bebas-Neue-Bold;
+    src: url(fonts/bebas-neue-bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: souvenir-italic;
+    src: url(fonts/souvenir-italic.ttf);
+}
+
+.body {
+    margin: 0;
+}
+
+header {
+    background: url(images/Eudora-template.png) no-repeat;
+    background-size: 100%;
+    min-height: 969px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    header {
+        min-height: 404px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    header {
+        min-height: 546px;
+    }
+}
+
+.menu {
+    color: #e59205;
+    background: rgba(0, 0, 0, 0.459);
+    height: 150px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .menu {
+        height: 86px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        height: 120px;
+    }
+}
+
+.mainMenu {
+    padding-top: 43px;
+    font-size: 24px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .mainMenu {
+        padding-top: 20px;
+        font-size: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .mainMenu {
+        padding-top: 35px;
+        font-size: none;
+    }
+}
+
+
+.mainMenu a {
+    color: white;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    margin: 28px;
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .mainMenu a {
+        margin: 10px;
+    }
+}
+
+.mainMenu span {
+    margin: 26px;
+    font-family: "Playfair-Display-Bold", sans-serif;
+    font-size: 41px;
+}
+
+.bl {
+    color: white;
+    margin-top: 275px;
+    width: 100%;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .bl {
+        margin-top: 70px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .bl {
+        margin-top: 111px;
+    }
+
+}
+
+.bl h1 {
+    font-family: "Playfair-Display-Bold-Italic", sans-serif;
+    margin: 20px;
+    word-spacing: 11px;
+    font-size: 50px;
+
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .bl h1 {
+        font-size: 30px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .bl h1 {
+        font-size: 40px;
+    }
+}
+
+.bl span {
+    color: #e59205;
+}
+
+.bl_text {
+    margin: 34px 0px 45px;
+    line-height: 27px;
+    font-size: 14px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .bl_text {
+        line-height: 24px;
+        margin: 19px 0px 34px;
+    }
+}
+
+.bl_button {
+    background: none;
+    color: whitesmoke;
+    width: 140px;
+    height: 44px;
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .bl_button {
+        width: 99px;
+        height: 30px;
+        font-size: 11px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .bl_button {
+        width: 120px;
+        height: 35px;
+        font-size: 11px;
+    }
+}
+
+.title {
+    overflow: hidden;
+    text-align: center;
+    font-size: 52px;
+    font-family: "Playfair-Display-Bold-Italic", sans-serif;
+    color: #6e7498;
+    padding-top: 77px;
+    width: 100%;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .title {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .title {
+        font-size: 35px;
+        padding-top: 55px;
+    }
+}
+
+
+.title:before,
+.title:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #e59205;
+    position: relative;
+}
+
+.title:before {
+    margin-left: -100%;
+    left: -14px;
+}
+
+.title:after {
+    margin-right: -100%;
+    right: -14px;
+}
+
+.txt {
+    font-family: "Playfair-Display-Bold-Italic", sans-serif;
+    color: #cfd1db;
+    margin: 27px;
+    line-height: 29px;
+    text-align: center;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .txt {
+        margin: 15px;
+        line-height: 21px;
+        font-size: 10px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .txt {
+        font-size: 12px;
+        margin: 15px;
+    }
+}
+
+.box {
+    text-align: center;
+    padding-top: 38px;
+}
+
+.box_button {
+    margin: 10px;
+    background: none;
+    color: #6e7498;
+    border-width: 1.5px;
+    text-transform: uppercase;
+    width: 146px;
+    height: 46px;
+    font-size: 21px;
+    font-family: "Bebas-Neue-Bold", sans-serif;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .box_button {
+        width: 100px;
+        height: 33px;
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .box_button {
+        width: 120px;
+        height: 37px;
+        font-size: 20px;
+    }
+}
+
+.box_button:hover {
+    background: #e59205;
+}
+
+.container {
+    min-height: 390px;
+    min-width: 100%;
+    padding-top: 102px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.cnt {
+    display: inline-block;
+    min-width: 218px;
+    text-align: center;
+    margin: 3px;
+
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .cnt {
+        margin: 10px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .cnt {
+        margin: 15px;
+    }
+}
+
+.cnt_img {
+    width: 218px;
+    height: 207px;
+    background: #f6f7f9;
+}
+
+.cnt_img img {
+    width: 196px;
+    height: 187px;
+    margin: 10px;
+}
+
+.btn {
+    width: 131px;
+    height: 42px;
+    background: none;
+    border-color: #6e7498;
+    border-width: 0.5px;
+    margin-top: 21px;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-family: "Bebas-Neue-Bold", sans-serif;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .btn {
+        margin: 10px;
+        width: 101px;
+        height: 33px;
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .btn {
+        margin: 15px;
+    }
+}
+
+.block {
+    width: 100%;
+    position: relative;
+    min-height: 370px;
+    margin-top: 217px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .block {
+        margin-top: 10px;
+        min-height: 150px;
+
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .block {
+        margin-top: 20px;
+        min-height: 250px;
+    }
+}
+
+.block_left {
+    width: 40%;
+    float: left;
+    background: #e59205;
+    display: block;
+    height: 370px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .block_left {
+        height: 150px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .block_left {
+        height: 250px;
+    }
+}
+
+.block_left p {
+    color: white;
+    font-family: "Playfair-Display-Bold-Italic", sans-serif;
+    margin-left: 102px;
+    font-size: 40px;
+    margin-top: 65px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .block_left p {
+        font-size: 20px;
+        margin: 37px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .block_left p {
+        font-size: 30px;
+        margin: 47px;
+    }
+}
+
+.block_right {
+    width: 60%;
+    float: right;
+    display: block;
+    height: 370px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .block_right {
+        height: 150px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .block_right {
+        height: 250px;
+    }
+}
+
+.block_right img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 819px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 43px;
+}
+
+@media all and (min-width: 0) and (max-width: 599px) {
+    .wrap {
+        height: 2000px;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 767px) {
+    .wrap {
+        height: 1038px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .wrap {
+        padding-top: 20px;
+        height: 993px;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1139px) {
+    .wrap {
+        padding-top: 20px;
+        height: 1178px;
+    }
+
+}
+
+.wrap_block {
+    width: 380px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .wrap_block {
+        margin-top: 15px;
+        width: 300px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .wrap_block {
+        margin-top: 10px;
+    }
+}
+
+.wrap_img {
+    margin-top: 10px;
+    width: 65px;
+    height: 60px;
+}
+
+.wrap_title {
+    font-family: "Playfair-Display-Bold", sans-serif;
+    color: #6e7498;
+    font-size: 23px;
+    margin: 25px;
+}
+
+
+.wrap_text {
+    font-family: "Raleway-Regular", sans-serif;
+    font-size: 13px;
+    color: #bbbecd;
+    line-height: 2.5em;
+    margin: 28px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .wrap_text {
+        line-height: 25px;
+        font-size: 12px;
+    }
+}
+
+.wrap_more {
+    width: 131px;
+    height: 38px;
+    background: none;
+    color: #6e7498;
+    border-color: #bbbecd;
+    border-width: 0.5px;
+    font-size: 21px;
+    font-family: "Bebas-Neue-Bold", sans-serif;
+}
+
+.block-mail {
+    background: url(images/fon_e-mail.png), no-repeat;
+    background-size: 100%;
+    height: 449px;
+    width: 100%;
+    text-align: center;
+    margin-top: 109px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .block-mail {
+        margin-top: 10px;
+        height: 253px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .block-mail {
+        margin-top: 20px;
+        height: 253px;
+    }
+}
+
+.block-mail_title {
+    color: #ffffff;
+    font-family: "souvenir-italic", sans-serif;
+    font-size: 50px;
+    padding-top: 82px;
+}
+
+@media all and (min-width: 0) and (max-width: 599px) {
+    .block-mail_title {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 767px) {
+    .block-mail_title {
+        font-size: 27px;
+        padding-top: 25px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .block-mail_title {
+        font-size: 35px;
+        padding-top: 40px;
+    }
+}
+
+.block-mail_input {
+    background: none;
+    color: white;
+    border-color: white;
+    text-align: center;
+    margin: 44px;
+    height: 38px;
+    width: 490px;
+    text-transform: uppercase;
+    border-width: 1.5px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .block-mail_input {
+        margin-top: 10px;
+        height: px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .block-mail_input {
+        margin: 20px;
+        height: 41px;
+        border-width: 1px;
+    }
+}
+
+.block-mail_button {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background: #e59205;
+    width: 142px;
+    height: 31px;
+    border: 0;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .footer {
+        height: 53px;
+    }
+}
+
+.footer_copyright {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.footer_text {
+    color: #a4a8bc;
+    margin-top: 45px;
+    font-size: 15px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .footer_text {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}
+
+.footer_menu {
+    width: 50%;
+    float: right;
+    text-align: center;
+    height: 100%;
+}
+
+.footer_nav {
+    margin-top: 46px;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .footer_nav {
+        margin-top: 17px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .footer_nav {
+        margin-top: 46px;
+    }
+}
+
+.footer_link {
+    color: #d7d9e2;
+    font-size: 15px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .footer_link {
+        margin: 10px;
+        font-size: 10px;
+    }
+}
